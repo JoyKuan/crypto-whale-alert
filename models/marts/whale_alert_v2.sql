@@ -10,6 +10,7 @@ with whale as (
 )
 
 select
+    '{{ invocation_id }}' as invocation_id,
     output_address,
     total_sent,
     transaction_count

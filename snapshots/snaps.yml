@@ -1,0 +1,9 @@
+snapshots:
+  - name: customer_snapshot
+    description: "A snapshot of the customers table"
+    relation: source('customers', 'customer_status')
+    config:
+      unique_key: customer_id
+      strategy: timestamp
+      updated_at: last_updated
+      hard_deletes: new_record

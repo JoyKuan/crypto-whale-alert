@@ -20,6 +20,7 @@ with flattened_outputs as (
 )
 
 select 
+    '{{ invocation_id }}' as invocation_id,
     hash_key,
     block_hash,
     block_number,
